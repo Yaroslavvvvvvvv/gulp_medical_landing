@@ -8,11 +8,13 @@ const sourcemaps = require('gulp-sourcemaps');
 
 const appPath = {
     scss: './app/scss/**/*.scss',
-    pug: './app/index.pug'
+    pug: './app/index.pug',
+    img: './app/images/**/*.*'
 }
 const destPath = {
     css: './dest/css',
-    html: './dest'
+    html: './dest',
+    img: './dest/images'
 }
 
 //параметри стилів
@@ -20,8 +22,8 @@ function buildStyles() {
     return src(appPath.scss)
         //ініціалізація карти
         .pipe(sourcemaps.init())
-        .pipe(sass.sync({}).on('error', sass.logError))
-        //запис карти
+        .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
+        //запис карти  
         .pipe(sourcemaps.write())
         .pipe(dest(destPath.css))
         .pipe(connect.reload());
@@ -43,6 +45,11 @@ function startLocalServer() {
     })
 }
 
+function copyImage(){
+    return src(appPath.img)
+        .pipe(dest(destPath.img))
+}
+
 //watch
 function watchCode() {
     watch(appPath.scss, buildStyles)
@@ -50,7 +57,7 @@ function watchCode() {
 }
 
 
-exports.default = series(buildStyles, buildHtml, parallel(startLocalServer, watchCode))
+exports.default = series(buildStyles, buildHtml, copyImage, parallel(startLocalServer, watchCode))
 
 
 

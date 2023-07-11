@@ -4,6 +4,145 @@ html(lang='en')
         meta(charset='UTF-8')
         //TODO: viewport
         title Test landing
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family' +
+        '=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,' +
+        '300;1,400;1,500;1,600;1,700;1,800&display=swap' rel='stylesheet')
         link(rel='stylesheet' href='./css/style.css')
     body
-        h1 test
+        header
+            .container.pl-0.pr-0
+                nav.navbar.navbar-expand-lg.pl-0.pr-0
+                    a.navbar-brand(href='#')
+                        img(src='./images/header/logo.svg' alt='logo' class='mw-100')
+                    #navbarNav.collapse.navbar-collapse
+                        ul.navbar-nav.ml-auto
+                            li.nav-item.pr-3
+                                a.nav-link(href='#')
+                                    div.d-flex.align-items-center
+                                        img(src='./images/header/mail.svg' alt='mail' class='mw-100 mr-2')
+                                        div.d-flex.flex-column
+                                            span.nav_header Mail Us
+                                            span.nav_info Info@domain.com
+                            li.nav-item.pr-3.pl-3
+                                a.nav-link(href='#')
+                                    div.d-flex.align-items-center
+                                        img(src='./images/header/phone.svg' alt='phone' class='mw-100 mr-2')
+                                        div.d-flex.flex-column
+                                            span.nav_header Call Us
+                                            span.nav_info (+021) 2336 278
+                            li.nav-item.pt-3.pl-3
+                                button.btn.mw-100.btn-lg.my_button.mw-100(type='button') Make Appointment
+            .container.pl-0.pr-0
+                nav.navbar.navbar-expand-lg.pl-0.pr-0
+                    #navbarSupportedContent.collapse.navbar-collapse
+                        ul.navbar-nav.mr-auto
+                            li.nav-item.pr-5
+                                a.nav-link.down_link(href='#') HOME
+                            li.nav-item.pr-5
+                                a.nav-link.down_link(href='#') ABOUT US
+                            li.nav-item.pr-5
+                                a.nav-link.down_link(href='#') SERVICES
+                            li.nav-item.pr-5
+                                a.nav-link.down_link(href='#') APPOINTMENT
+                            li.nav-item.dropdown.pr-5
+                                a#navbarPages.nav-link.dropdown-toggle.down_link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | PAGES
+                                .dropdown-menu(aria-labelledby='navbarDropdown')
+                                    a.dropdown-item(href='#') Action
+                                    a.dropdown-item(href='#') Another action
+                                    .dropdown-divider
+                                    a.dropdown-item(href='#') Something else here
+                            li.nav-item.dropdown.pr-5
+                                a#navbarBLOG.nav-link.dropdown-toggle.down_link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                    | BLOG
+                                .dropdown-menu(aria-labelledby='navbarDropdown')
+                                    a.dropdown-item(href='#') Action
+                                    a.dropdown-item(href='#') Another action
+                                    .dropdown-divider
+                                    a.dropdown-item(href='#') Something else here
+                            li.nav-item.pr-5
+                                a.nav-link.down_link(href='#') CONTACT
+                        ul.navbar-nav.ml-auto
+                            li.nav-item
+                                a.nav-link(href='#')
+                                    img(src='images/header/facebook_logo.svg' alt='facebook logo' class='mw-100')
+                            li.nav-item
+                                a.nav-link(href='#')
+                                    img(src='images/header/twitter_logo.svg' alt='twitter logo' class='mw-100')
+                            li.nav-item
+                                a.nav-link(href='#')
+                                    img(src='images/header/youtube_logo.svg' alt='youtube logo' class='mw-100')
+                            li.nav-item
+                                a.nav-link(href='#')
+                                    img(src='images/header/instagram_logo.svg' alt='instagram logo' class='mw-100')
+        main
+            section.first_section
+                .container.position-relative
+                    .float-right
+                        img(src='./images/first_doctor.png' alt='doctor' class='mw-100 first_section float-right')
+                        .position-absolute
+                            h1.first_header Best Medical &<br>Healthcare Service<br>For Your Family
+                            p.first_paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                <br>eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            button.btn.btn-lg.header_button(type='button') Contact us
+
+            section.second_section
+                .container
+                    .row
+                        .col-lg-6.col-md-6.col-sm-12
+                            div.left_second
+                                a(href='#' class='link_second') Medical Services
+                                h2.second_header We Maintain Regular<br>Procedures
+                                p.second_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non
+                                    <br>gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor
+                                    <br>sit amet, consectetur adipiscing elit.
+                        .col-lg-6.col-md-6.col-sm-12
+                            .container
+                                .row
+                                    .col-lg-6.col-md-6.col-sm-12.modal_left
+                                        .bg-white.modal_block.pt-5.mb-4
+                                            .modal_logo
+                                                a(href='#')
+                                                    img(src='./images/second_section/registration.svg' alt='logo' class='mw-100')
+                                            h6.text-center.pt-4 Registration
+                                            p.text-center Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.
+                                            .modal_link.pb-5
+                                                a(href='#') Learn More →
+                                                hr.colored_line
+                                        .bg-white.modal_block.pt-5.mb-4
+                                            .modal_logo.bg-primary
+                                                a(href='#')
+                                                    img(src='./images/second_section/waiting_list.svg' alt='logo' class='mw-100')
+                                            h6.text-center.pt-4 Waiting List
+                                            p.text-center Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.
+                                            .modal_link.pb-5
+                                                a(href='#') Learn More →
+                                                hr.colored_line
+                                    .col-lg-6.col-md-6.col-sm-12.modal_right
+                                        .bg-white.modal_block.pt-5.mb-4
+                                            .modal_logo
+                                                a(href='#')
+                                                    img(src='./images/second_section/consulation.svg' alt='logo' class='mw-100')
+                                            h6.text-center.pt-4 Consultation
+                                            p.text-center Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.
+                                            .modal_link.pb-5
+                                                a(href='#') Learn More →
+                                                hr.colored_line
+                                        .bg-white.modal_block.pt-5.mb-4
+                                            .modal_logo
+                                                a(href='#')
+                                                    img(src='./images/second_section/treatment.svg' alt='logo' class='mw-100')
+                                            h6.text-center.pt-4 Treatment
+                                            p.text-center Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.
+                                            .modal_link.pb-5
+                                                a(href='#') Learn More →
+                                                hr.colored_line
+
+
+
+
+
+
+
