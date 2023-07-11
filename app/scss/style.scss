@@ -219,6 +219,69 @@ html body {
   }
 
   .third_section {
+    padding-top: 170px;
+
+    .third_left {
+      width: 475px;
+      height: 615px;
+      border-radius: 20px;
+      background: #0067FF;
+    }
+    .small_third {
+      margin-top: 405px;
+    }
+
+    .link_third {
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 18px;
+    }
+
+    h5 {
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 38.4px;
+    }
+
+    p {
+      font-family: 'DM Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    .third_header {
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 19.2px;
+    }
+
+    .third_right {
+      padding-bottom: 170px;
+
+      .third_button {
+        color: #F8FAFD;
+        border-radius: 50px;
+        background: #0067FF;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+      }
+
+      .third_button:hover {
+        background: #4C40F7;
+        color: $background;
+        transition: 0.5s;
+      }
+    }
+
   }
 }
 
