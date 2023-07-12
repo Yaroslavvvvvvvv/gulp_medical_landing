@@ -227,6 +227,7 @@ html body {
       border-radius: 20px;
       background: #0067FF;
     }
+
     .small_third {
       margin-top: 405px;
     }
@@ -281,6 +282,54 @@ html body {
         transition: 0.5s;
       }
     }
+
+    .next {
+      padding-top: 167px;
+      padding-bottom: 173px;
+      .third_next_header {
+        color: #171717;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 60px;
+      }
+
+      .third_next_text {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+
+      .next_logo {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #4C40F7;
+        border-radius: 25px;
+      }
+
+      span {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.0625rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+      }
+
+      p {
+        color: #444;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+
 
   }
 }
