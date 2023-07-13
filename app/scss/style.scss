@@ -286,6 +286,7 @@ html body {
     .next {
       padding-top: 167px;
       padding-bottom: 173px;
+
       .third_next_header {
         color: #171717;
         font-family: 'Inter', sans-serif;
@@ -329,8 +330,94 @@ html body {
         line-height: 24px;
       }
     }
+  }
 
+  .fourth_section {
+    background: $my_background;
+    padding-top: 129px;
+    padding-bottom: 216px;
 
+    .fourth_block {
+      width: 500px;
+      height: 148px;
+      border-radius: 5px;
+      background: $background;
+      top: 510px;
+      left: 20px;
+
+      .fourth_logo {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #DCEEFE;
+        border-radius: 25px;
+      }
+      .fourth_logo:hover{
+        background:#4C40F7;
+        transition: 0.5s;
+      }
+      .fourth_word{
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+      }
+      .fourth_line {
+        border: none;
+        height: 5px;
+        width: 70px;
+        background-color: #DCEEFE;;
+        margin-top: 50px;
+      }
+    }
+
+    .link_fourth {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22.4px;
+    }
+
+    .link_fourth:hover {
+      text-decoration: none;
+    }
+
+    .fourth_header {
+      font-family: 'Inter', sans-serif;
+      font-size: 55px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 77px;
+    }
+
+    .fourth_text {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22.4px;
+      letter-spacing: 0.28px;
+    }
+
+    .fourth_button {
+      color: #F8FAFD;
+      border-radius: 50px;
+      background: #4C40F7;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16px;
+    }
+
+    .fourth_button:hover {
+      background: #0067FF;
+      color: $background;
+      transition: 0.5s;
+    }
   }
 }
 
