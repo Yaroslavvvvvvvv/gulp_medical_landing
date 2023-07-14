@@ -458,7 +458,6 @@ html body {
       font-style: normal;
       font-weight: 400;
       line-height: 18;
-      margin-top: 92px;
     }
 
     .sixth_text {
@@ -488,6 +487,83 @@ html body {
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+    }
+  }
+
+  footer {
+    background: black;
+
+    .my_footer {
+      padding-top: 140px;
+      padding-bottom: 140px;
+      .footer_logo {
+        color: $background;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-right: 20px;
+      }
+
+      .footer_header {
+        color: $background;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      .footer_text {
+        color: rgba(255, 255, 255, 0.71);
+        font-family: 'DM Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+      }
+
+      .big_link {
+        text-decoration: none;
+        color: $background;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+      }
+
+      .big_link:hover {
+        color: rgba(255, 255, 255, 0.71);
+        transition: 0.5s;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      .small_link {
+        text-decoration: none;
+        color: $background;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .small_link:hover {
+        color: rgba(255, 255, 255, 0.71);
+        transition: 0.5s;
+      }
+
+      .last_text {
+        color: $background;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%;
+      }
     }
   }
 }
