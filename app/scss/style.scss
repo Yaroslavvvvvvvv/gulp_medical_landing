@@ -444,7 +444,51 @@ html body {
       letter-spacing: 0.16px;
       text-transform: capitalize;
     }
+  }
 
+  .sixth_section {
+    background: $my_background;
+    padding-bottom: 119px;
+
+    .sixth_link {
+      text-decoration: none;
+      color: #F3874A;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18;
+      margin-top: 92px;
+    }
+
+    .sixth_text {
+      color: #A7A9AC;
+      font-family: 'DM Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .sixth_link:hover {
+      color: #f5bf62;
+    }
+
+    .name {
+      color: #F3874A;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.375rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .job {
+      color: #A7A9AC;
+      font-family: 'DM Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
 }
 
