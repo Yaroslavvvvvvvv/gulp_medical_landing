@@ -13,10 +13,9 @@ html(lang='en')
     body
         header
             .container.pl-0.pr-0.pt-4.pb-4
-                nav.navbar.navbar-expand-lg.pl-0.pr-0
-                    a.navbar-brand(href='#')
-                        img(src='./images/header/logo.svg' alt='logo' class='mw-100')
-                    #navbarNav.collapse.navbar-collapse
+                    nav.navbar.navbar-expand-lg.pl-0.pr-0
+                        a.navbar-brand.my_brand(href='#')
+                            img(src='./images/header/logo.svg' alt='logo' class='mw-100')
                         ul.navbar-nav.ml-auto
                             li.nav-item.pr-3
                                 a.nav-link(href='#')
@@ -25,17 +24,19 @@ html(lang='en')
                                         div.d-flex.flex-column
                                             span.nav_header Mail Us
                                             span.nav_info Info@domain.com
-                            li.nav-item.pr-3.pl-3
+                            li.nav-item.first_nav_item
                                 a.nav-link(href='#')
                                     div.d-flex.align-items-center
                                         img(src='./images/header/phone.svg' alt='phone' class='mw-100 mr-2')
                                         div.d-flex.flex-column
                                             span.nav_header Call Us
                                             span.nav_info (+021) 2336 278
-                            li.nav-item.pt-3.pl-3
+                            li.nav-item.pt-3.first_nav_button
                                 button.btn.mw-100.btn-lg.my_button.mw-100(type='button') Make Appointment
             .container.pl-0.pr-0.pb-4
                 nav.navbar.navbar-expand-lg.pl-0.pr-0
+                    button.navbar-toggler.my_menu(type='button' data-toggle='collapse' data-target='#navbarSupportedContent')
+                        span.navbar-toggler-icon.bg-primary
                     #navbarSupportedContent.collapse.navbar-collapse
                         ul.navbar-nav.mr-auto
                             li.nav-item.pr-5
@@ -66,16 +67,16 @@ html(lang='en')
                                 a.nav-link.down_link(href='#') CONTACT
                         ul.navbar-nav.ml-auto
                             li.nav-item
-                                a.nav-link(href='#')
+                                a.nav-link.social_link(href='#')
                                     img(src='images/header/facebook_logo.svg' alt='facebook logo' class='mw-100')
                             li.nav-item
-                                a.nav-link(href='#')
+                                a.nav-link.social_link(href='#')
                                     img(src='images/header/twitter_logo.svg' alt='twitter logo' class='mw-100')
                             li.nav-item
-                                a.nav-link(href='#')
+                                a.nav-link.social_link(href='#')
                                     img(src='images/header/youtube_logo.svg' alt='youtube logo' class='mw-100')
                             li.nav-item
-                                a.nav-link(href='#')
+                                a.nav-link.social_link(href='#')
                                     img(src='images/header/instagram_logo.svg' alt='instagram logo' class='mw-100')
         main
             section.first_section
