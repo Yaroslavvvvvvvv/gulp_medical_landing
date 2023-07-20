@@ -94,6 +94,16 @@ html body {
       padding-top: 60px;
     }
 
+    @media (min-width: 375px) and (max-width: 768px) {
+      .first_header {
+        font-size: 1rem;
+        line-height: 20px;
+        padding-left: 40px;
+        padding-top: 10px;
+      }
+    }
+
+
     .first_paragraph {
       color: #414154;
       font-family: 'DM Sans', sans-serif;
@@ -101,6 +111,15 @@ html body {
       font-weight: 400;
       line-height: 24px;
       padding-left: 100px;
+    }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      .first_paragraph {
+        font-size: 0.3rem;
+        line-height: 10px;
+        padding-left: 40px;
+        margin-bottom: 1px;
+      }
     }
 
     .header_button {
@@ -120,6 +139,14 @@ html body {
       color: $background;
       border-radius: 50px;
       transition: 0.5s;
+    }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      .header_button {
+        font-size: 0.3rem;
+        line-height: 8px;
+        margin-left: 40px;
+      }
     }
   }
 
@@ -141,12 +168,25 @@ html body {
         text-decoration: none;
       }
 
+      @media (min-width: 375px) and (max-width: 768px) {
+        .link_second {
+          font-size: 0.5rem;
+        }
+      }
+
       .second_header {
         color: $dark;
         font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 400;
         line-height: 77px;
+      }
+
+      @media (min-width: 375px) and (max-width: 768px) {
+        .second_header {
+          font-size: 1.7rem;
+          line-height: 38.5px;
+        }
       }
 
       .second_text {
@@ -156,6 +196,19 @@ html body {
         font-weight: 400;
         line-height: 22.4px;
       }
+
+      @media (min-width: 375px) and (max-width: 768px) {
+        .second_text {
+          font-size: 0.4375rem;
+          line-height: 11.2px;
+        }
+      }
+    }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      .left_second {
+        padding-top: 50px;
+      }
     }
 
     .modal_left {
@@ -163,9 +216,23 @@ html body {
       padding-bottom: 214px;
     }
 
+    @media (min-width: 375px) and (max-width: 768px) {
+      .modal_left {
+        padding-top: 50px;
+        padding-bottom: 3px;
+      }
+    }
+
     .modal_right {
       padding-top: 207px;
       padding-bottom: 188px;
+    }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      .modal_right {
+        padding-top: 3px;
+        padding-bottom: 50px;
+      }
     }
 
     .modal_block {
@@ -179,6 +246,12 @@ html body {
         margin-left: 95px;
       }
 
+      @media (min-width: 375px) and (max-width: 768px) {
+        .modal_logo {
+          margin-left: 140.1px;
+        }
+      }
+
       .modal_link {
         a {
           text-decoration: none;
@@ -189,6 +262,12 @@ html body {
           font-style: normal;
           font-weight: 400;
           line-height: 22.4px;
+        }
+
+        @media (min-width: 375px) and (max-width: 768px) {
+          a {
+            margin-left: 120px;
+          }
         }
 
         .colored_line {
@@ -241,6 +320,12 @@ html body {
       line-height: 18px;
     }
 
+    @media (min-width: 375px) and (max-width: 768px) {
+      .link_third {
+        font-size: 0.5rem;
+      }
+    }
+
     h5 {
       font-family: 'Inter', sans-serif;
       font-style: normal;
@@ -248,11 +333,27 @@ html body {
       line-height: 38.4px;
     }
 
+    @media (min-width: 375px) and (max-width: 768px) {
+      h5 {
+        font-size: 1rem;
+        line-height: 19.2px;
+      }
+    }
+
+
     p {
       font-family: 'DM Sans', sans-serif;
       font-style: normal;
       font-weight: 400;
       line-height: 24px;
+      font-size: 14px;
+    }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      p {
+        font-size: 7px;
+        line-height: 12px;
+      }
     }
 
     .third_header {
@@ -260,6 +361,12 @@ html body {
       font-style: normal;
       font-weight: 700;
       line-height: 19.2px;
+    }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      .third_header {
+        line-height: 8.1px;
+      }
     }
 
     .third_right {
@@ -281,6 +388,23 @@ html body {
         color: $background;
         transition: 0.5s;
       }
+
+      @media (min-width: 375px) and (max-width: 768px) {
+        .third_button {
+          font-size: 8px;
+          line-height: 8px;
+
+        }
+      }
+    }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      .third_right {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     .next {
@@ -293,6 +417,14 @@ html body {
         font-style: normal;
         font-weight: 700;
         line-height: 60px;
+      }
+
+      @media (min-width: 375px) and (max-width: 768px) {
+        .third_next_header {
+          line-height: 30px;
+          font-size: 25px;
+          text-align: center;
+        }
       }
 
       .third_next_text {
@@ -328,6 +460,13 @@ html body {
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
+      }
+    }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      .next {
+        padding-top: 5px;
+        padding-bottom: 50px;
       }
     }
   }
@@ -384,16 +523,30 @@ html body {
       line-height: 22.4px;
     }
 
+    @media (min-width: 375px) and (max-width: 768px) {
+      .link_fourth {
+        font-size: 0.5rem;
+        line-height: 12.2px;
+      }
+    }
+
     .link_fourth:hover {
       text-decoration: none;
     }
 
     .fourth_header {
       font-family: 'Inter', sans-serif;
-      font-size: 55px;
+      font-size: 3.4375rem;
       font-style: normal;
       font-weight: 400;
       line-height: 77px;
+    }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      .fourth_header {
+        font-size: 25.2px;
+        line-height: 38.5px;
+      }
     }
 
     .fourth_text {
@@ -405,12 +558,20 @@ html body {
       letter-spacing: 0.28px;
     }
 
+    @media (min-width: 375px) and (max-width: 768px) {
+      .fourth_text {
+        font-size: 0.4375rem;
+        line-height: 11.2px;
+      }
+    }
+
+
     .fourth_button {
       color: #F8FAFD;
       border-radius: 50px;
       background: #4C40F7;
       font-family: 'Open Sans', sans-serif;
-      font-size: 16px;
+      font-size: 1rem;
       font-style: normal;
       font-weight: 700;
       line-height: 16px;
@@ -420,6 +581,12 @@ html body {
       background: #0067FF;
       color: $background;
       transition: 0.5s;
+    }
+    @media (min-width: 375px) and (max-width: 768px) {
+      .fourth_button {
+        font-size: 0.5rem;
+        line-height: 8px;
+      }
     }
   }
 
@@ -496,6 +663,7 @@ html body {
     .my_footer {
       padding-top: 140px;
       padding-bottom: 140px;
+
       .footer_logo {
         color: $background;
         font-family: 'Poppins', sans-serif;
