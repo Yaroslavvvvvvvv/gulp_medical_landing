@@ -268,12 +268,14 @@ html body {
         font-style: normal;
         font-weight: 400;
         line-height: 77px;
+
       }
 
       @media (min-width: 375px) and (max-width: 768px) {
         .second_header {
           font-size: 1.7rem;
           line-height: 38.5px;
+          text-align: center;
         }
       }
 
@@ -372,6 +374,14 @@ html body {
         line-height: 22.4px;
       }
     }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      .modal_block {
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
   }
 
   .third_section {
@@ -387,6 +397,7 @@ html body {
 
     @media (min-width: 375px) and (max-width: 768px) {
       .third_left {
+        width: 100%;
         margin-right: auto;
         margin-left: auto;
       }
@@ -394,6 +405,14 @@ html body {
 
     .small_third {
       margin-top: 405px;
+    }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      .small_third {
+        margin-top: 410px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
     .link_third {
@@ -422,6 +441,7 @@ html body {
       h5 {
         font-size: 1rem;
         line-height: 19.2px;
+        text-align: center;
       }
     }
 
@@ -446,12 +466,6 @@ html body {
       font-style: normal;
       font-weight: 700;
       line-height: 19.2px;
-    }
-
-    @media (min-width: 375px) and (max-width: 768px) {
-      .third_header {
-        line-height: 8.1px;
-      }
     }
 
     .third_right {
@@ -524,6 +538,10 @@ html body {
         .third_next_text {
           font-size: 7.5px;
           line-height: 12px;
+
+          br {
+            display: none;
+          }
         }
       }
 
@@ -563,6 +581,13 @@ html body {
     }
   }
 
+  @media (min-width: 375px) and (max-width: 768px) {
+    .third_section {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
   .fourth_section {
     background: $my_background;
     padding-top: 129px;
@@ -574,7 +599,6 @@ html body {
       border-radius: 5px;
       background: $background;
       top: 510px;
-      left: 20px;
 
       .fourth_logo {
         width: 50px;
@@ -607,6 +631,16 @@ html body {
       }
     }
 
+    @media (min-width: 375px) and (max-width: 768px) {
+      .fourth_block {
+        max-width: 100%;
+        top: auto;
+        bottom: 0;
+        margin: 20px;
+      }
+    }
+
+
     .link_fourth {
       font-family: 'Inter', sans-serif;
       font-size: 1rem;
@@ -638,6 +672,7 @@ html body {
       .fourth_header {
         font-size: 25.2px;
         line-height: 38.5px;
+        text-align: center;
       }
     }
 
@@ -658,28 +693,40 @@ html body {
     }
 
 
-    .fourth_button {
-      color: #F8FAFD;
-      border-radius: 50px;
-      background: #4C40F7;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1rem;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 16px;
-    }
+    .my_fourth_button {
+      text-align: center;
 
-    .fourth_button:hover {
-      background: #0067FF;
-      color: $background;
-      transition: 0.5s;
-    }
-
-    @media (min-width: 375px) and (max-width: 768px) {
       .fourth_button {
-        font-size: 0.5rem;
-        line-height: 8px;
+        color: #F8FAFD;
+        border-radius: 50px;
+        background: #4C40F7;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
       }
+
+      .fourth_button:hover {
+        background: #0067FF;
+        color: $background;
+        transition: 0.5s;
+      }
+
+      @media (min-width: 375px) and (max-width: 768px) {
+        .fourth_button {
+          font-size: 0.5rem;
+          line-height: 8px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    .fourth_section {
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
   }
 
@@ -695,6 +742,14 @@ html body {
       line-height: 56px;
     }
 
+    @media (min-width: 375px) and (max-width: 768px) {
+      .fifth_header {
+        padding-top: 0;
+        font-size: 1.4375rem;
+        line-height: 28px;
+      }
+    }
+
     .fifth_text {
       text-align: center;
       font-family: 'Inter', sans-serif;
@@ -703,6 +758,13 @@ html body {
       line-height: 16px;
       letter-spacing: 0.16px;
       text-transform: capitalize;
+    }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      .fifth_text {
+        font-size: 8px;
+        line-height: 8px;
+      }
     }
   }
 
@@ -718,6 +780,13 @@ html body {
       font-style: normal;
       font-weight: 400;
       line-height: 18;
+    }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      .sixth_link {
+        font-size: 0.5rem;
+        line-height: 8px;
+      }
     }
 
     .sixth_text {
@@ -750,6 +819,13 @@ html body {
     }
   }
 
+  @media (min-width: 375px) and (max-width: 768px) {
+    .sixth_section {
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
+  }
+
   footer {
     background: black;
 
@@ -760,11 +836,18 @@ html body {
       .footer_logo {
         color: $background;
         font-family: 'Poppins', sans-serif;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         margin-right: 20px;
+      }
+
+      @media (min-width: 375px) and (max-width: 768px) {
+        .footer_logo {
+          font-size: 0.5625rem;
+          margin-right: 10px;
+        }
       }
 
       .footer_header {
@@ -776,12 +859,25 @@ html body {
         line-height: normal;
       }
 
+      @media (min-width: 375px) and (max-width: 768px) {
+        .footer_header {
+          font-size: 0.75rem;
+        }
+      }
+
       .footer_text {
         color: rgba(255, 255, 255, 0.71);
         font-family: 'DM Sans', sans-serif;
         font-style: normal;
         font-weight: 400;
         line-height: 32px;
+      }
+
+      @media (min-width: 375px) and (max-width: 768px) {
+        .footer_text {
+          font-size: 0.5rem;
+          line-height: 16px;
+        }
       }
 
       .big_link {
@@ -796,6 +892,13 @@ html body {
       .big_link:hover {
         color: rgba(255, 255, 255, 0.71);
         transition: 0.5s;
+      }
+
+      @media (min-width: 375px) and (max-width: 768px) {
+        .big_link {
+          font-size: 8px;
+          line-height: 8px;
+        }
       }
 
       li {
@@ -817,6 +920,12 @@ html body {
         transition: 0.5s;
       }
 
+      @media (min-width: 375px) and (max-width: 768px) {
+        .small_link {
+          font-size: 7px;
+        }
+      }
+
       .last_text {
         color: $background;
         font-family: 'DM Sans', sans-serif;
@@ -824,6 +933,32 @@ html body {
         font-style: normal;
         font-weight: 400;
         line-height: 180%;
+      }
+
+      @media (min-width: 375px) and (max-width: 768px) {
+        .last_text {
+          font-size: 0.5rem;
+        }
+      }
+    }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      .my_footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-right: 5px;
+        margin-left: 5px;
+
+        .right_footer {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .my_footer_link {
+          padding-top: 2px;
+          padding-left: 15px;
+          padding-right: 0;
+        }
       }
     }
   }

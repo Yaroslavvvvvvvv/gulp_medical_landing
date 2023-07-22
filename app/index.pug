@@ -35,7 +35,7 @@ html(lang='en')
                                 button.btn.mw-100.btn-lg.my_button.mw-100(type='button') Make Appointment
             .container.pl-0.pr-0.pb-4
                 nav.navbar.navbar-expand-lg.ml-auto.mr-auto
-                    button.navbar-toggler.my_menu(type='button' data-toggle='collapse' data-target='#navbarSupportedContent')
+                    button.navbar-toggler.collapsed.my_menu(type='button' data-toggle='collapse' data-target='#navbarSupportedContent')
                         span.navbar-toggler-icon.icon_menu
                     #navbarSupportedContent.collapse.navbar-collapse
                         ul.navbar-nav.mr-auto
@@ -143,7 +143,7 @@ html(lang='en')
             section.third_section
                 .container
                     .row
-                        .col-lg-6.col-md-12.col-sm-12
+                        .col-lg-6.col-md-6.col-sm-12
                             .position-relative
                                 .float-lg-right
                                     .float-right.third_left.mt-4.ml-5
@@ -152,7 +152,7 @@ html(lang='en')
                                     .position-absolute.small_third
                                         img(src='./images/on_doctor.png' alt='doctor' class='mw-100')
 
-                        .col-lg-6.col-md-12.col-sm-12
+                        .col-lg-6.col-md-6.col-sm-12
                             a(href='#' class='link_third') About MedicaLife
                             h5 We Provide Essential Services For<br>Your Health Care
                             p.pb-4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -224,7 +224,7 @@ html(lang='en')
                 .container
                     .row
                         .col-lg-6.col-md-6.col-sm-12
-                            .position-relative
+                            .position-relative.d-flex.justify-content-center
                                 img(src='./images/ok_doctor.png' alt='doctor' class='mw-100')
                                 .position-absolute.fourth_block
                                     .d-flex.justify-content-around
@@ -248,7 +248,8 @@ html(lang='en')
                                 a(href='#' class='link_fourth') APPOINTMENT
                                 h2.fourth_header Make An<br>Appointment And<br>Get Treatment
                                 p.fourth_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                button.btn.btn-lg.fourth_button(type='button') Contact us
+                                div.my_fourth_button
+                                    button.btn.btn-lg.fourth_button(type='button') Contact us
             section.fifth_section.pb-4
                 .container
                     h4.fifth_header Our Professional Team
@@ -281,20 +282,20 @@ html(lang='en')
         footer
             .container
                 .d-flex.justify-content-between.my_footer.row
-                    div.right_footer
+                    div
                         span.footer_logo M
                         span.footer_header Medicate
                         p.footer_text.pt-4.pb-2 We are the most powerful and leading<br>software agency in the world
-                        .row
-                            a.nav-link(href='#')
+                        .row.right_footer
+                            a.nav-link.my_footer_link(href='#')
                                 img(src='images/header/facebook_logo.svg' alt='facebook logo' class='mw-100')
-                            a.nav-link(href='#')
+                            a.nav-link.my_footer_link(href='#')
                                 img(src='images/header/twitter_logo.svg' alt='twitter logo' class='mw-100')
-                            a.nav-link(href='#')
+                            a.nav-link.my_footer_link(href='#')
                                 img(src='images/header/youtube_logo.svg' alt='youtube logo' class='mw-100')
-                            a.nav-link(href='#')
+                            a.nav-link.my_footer_link(href='#')
                                 img(src='images/header/instagram_logo.svg' alt='instagram logo' class='mw-100')
-                    div
+                    div.left_footer
                         a(href='#' class='big_link') Links
                         ul.pl-0
                             li.pt-2
