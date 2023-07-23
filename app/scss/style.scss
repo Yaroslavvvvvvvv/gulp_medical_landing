@@ -8,6 +8,7 @@ $background: #fff;
 $my_background: #F6F6F6;
 
 html body {
+  width: 100%;
   font-size: $font-size;
   color: $text;
 
@@ -99,9 +100,21 @@ html body {
         padding-left: 0;
       }
       .my_brand {
-        padding-left: 86.5px;
+        padding-left: 16px;
       }
     }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .first_nav_item {
+        padding-left: 0;
+      }
+      .first_nav_button {
+        padding-left: 0;
+      }
+      .my_brand {
+        padding-left: 0;
+      }
+    }
+
 
     .nav_header {
       color: $text;
@@ -129,6 +142,7 @@ html body {
         line-height: 12px;
       }
     }
+
 
     .my_button {
       border-radius: 50px;
@@ -190,6 +204,14 @@ html body {
         padding-top: 10px;
       }
     }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .first_header {
+        padding-left: 20px;
+        padding-top: 20px;
+        font-size: 2.34rem;
+        line-height: 40px;
+      }
+    }
 
 
     .first_paragraph {
@@ -207,6 +229,14 @@ html body {
         line-height: 10px;
         padding-left: 40px;
         margin-bottom: 1px;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .first_paragraph {
+        font-size: 0.75rem;
+        line-height: 16px;
+        padding-left: 20px;
+        margin-bottom: 16px;
       }
     }
 
@@ -236,6 +266,13 @@ html body {
         margin-left: 40px;
       }
     }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .header_button {
+        font-size: 0.75rem;
+        line-height: 16px;
+        margin-left: 20px;
+      }
+    }
   }
 
   .second_section {
@@ -261,6 +298,12 @@ html body {
           font-size: 0.5rem;
         }
       }
+      @media (min-width: 768px) and (max-width: 1200px) {
+        .link_second {
+          font-size: 0.8rem;
+        }
+      }
+
 
       .second_header {
         color: $dark;
@@ -278,6 +321,12 @@ html body {
           text-align: center;
         }
       }
+      @media (min-width: 768px) and (max-width: 1200px) {
+        .second_header {
+          font-size: 2.8rem;
+          line-height: 50px;
+        }
+      }
 
       .second_text {
         font-family: 'DM Sans', sans-serif;
@@ -291,6 +340,14 @@ html body {
         .second_text {
           font-size: 0.4375rem;
           line-height: 11.2px;
+          text-align: center;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1200px) {
+        .second_text {
+          br {
+            display: none;
+          }
         }
       }
     }
@@ -300,6 +357,12 @@ html body {
         padding-top: 50px;
       }
     }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .left_second {
+        padding-top: 50px;
+      }
+    }
+
 
     .modal_left {
       padding-top: 176px;
@@ -307,6 +370,12 @@ html body {
     }
 
     @media (min-width: 375px) and (max-width: 768px) {
+      .modal_left {
+        padding-top: 50px;
+        padding-bottom: 3px;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1200px) {
       .modal_left {
         padding-top: 50px;
         padding-bottom: 3px;
@@ -382,6 +451,13 @@ html body {
         margin-left: auto;
       }
     }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .modal_block {
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
   }
 
   .third_section {
@@ -429,6 +505,11 @@ html body {
         font-size: 0.5rem;
       }
     }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .link_third {
+        font-size: 0.8rem;
+      }
+    }
 
     h5 {
       font-family: 'Inter', sans-serif;
@@ -442,6 +523,13 @@ html body {
         font-size: 1rem;
         line-height: 19.2px;
         text-align: center;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      h5 {
+        font-size: 1.5rem;
+        line-height: 28.8px;
+        text-align: left;
       }
     }
 
@@ -458,6 +546,16 @@ html body {
       p {
         font-size: 7px;
         line-height: 12px;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      p {
+        font-size: 12px;
+        line-height: 20px;
+
+        br {
+          display: none;
+        }
       }
     }
 
@@ -495,9 +593,23 @@ html body {
 
         }
       }
+      @media (min-width: 768px) and (max-width: 1200px) {
+        .third_button {
+          font-size: 14px;
+
+        }
+      }
     }
 
     @media (min-width: 375px) and (max-width: 768px) {
+      .third_right {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1200px) {
       .third_right {
         padding-bottom: 20px;
         display: flex;
@@ -523,6 +635,13 @@ html body {
           line-height: 30px;
           font-size: 25px;
           text-align: center;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1200px) {
+        .third_next_header {
+          line-height: 30px;
+          font-size: 40px;
+          text-align: left;
         }
       }
 
@@ -579,9 +698,21 @@ html body {
         padding-bottom: 50px;
       }
     }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .next {
+        padding-top: 5px;
+        padding-bottom: 50px;
+      }
+    }
   }
 
   @media (min-width: 375px) and (max-width: 768px) {
+    .third_section {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1200px) {
     .third_section {
       padding-top: 50px;
       padding-bottom: 50px;
@@ -639,6 +770,14 @@ html body {
         margin: 20px;
       }
     }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .fourth_block {
+        max-width: 100%;
+        top: auto;
+        bottom: 0;
+        margin: 20px;
+      }
+    }
 
 
     .link_fourth {
@@ -653,6 +792,12 @@ html body {
       .link_fourth {
         font-size: 0.5rem;
         line-height: 12.2px;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .link_fourth {
+        font-size: 0.8rem;
+        line-height: 16.8px;
       }
     }
 
@@ -675,6 +820,14 @@ html body {
         text-align: center;
       }
     }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .fourth_header {
+        font-size: 2.3rem;
+        line-height: 50px;
+        text-align: left;
+      }
+    }
+
 
     .fourth_text {
       font-family: 'DM Sans', sans-serif;
@@ -691,7 +844,6 @@ html body {
         line-height: 11.2px;
       }
     }
-
 
     .my_fourth_button {
       text-align: center;
@@ -720,10 +872,22 @@ html body {
           text-align: center;
         }
       }
+      @media (min-width: 768px) and (max-width: 1200px) {
+        .fourth_button {
+          font-size: 14px;
+          text-align: center;
+        }
+      }
     }
   }
 
   @media (min-width: 375px) and (max-width: 768px) {
+    .fourth_section {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1200px) {
     .fourth_section {
       padding-top: 50px;
       padding-bottom: 50px;
@@ -749,6 +913,13 @@ html body {
         line-height: 28px;
       }
     }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .fifth_header {
+        padding-top: 0;
+        font-size: 2.16rem;
+        line-height: 42px;
+      }
+    }
 
     .fifth_text {
       text-align: center;
@@ -764,6 +935,11 @@ html body {
       .fifth_text {
         font-size: 8px;
         line-height: 8px;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .fifth_text {
+        line-height: 16px;
       }
     }
   }
@@ -786,6 +962,11 @@ html body {
       .sixth_link {
         font-size: 0.5rem;
         line-height: 8px;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .sixth_link {
+        font-size: 14px;
       }
     }
 
@@ -825,6 +1006,12 @@ html body {
       padding-top: 50px;
     }
   }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .sixth_section {
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
+  }
 
   footer {
     background: black;
@@ -849,6 +1036,12 @@ html body {
           margin-right: 10px;
         }
       }
+      @media (min-width: 768px) and (max-width: 1200px) {
+        .footer_logo {
+          font-size: 1rem;
+          margin-right: 10px;
+        }
+      }
 
       .footer_header {
         color: $background;
@@ -864,6 +1057,11 @@ html body {
           font-size: 0.75rem;
         }
       }
+      @media (min-width: 768px) and (max-width: 1200px) {
+        .footer_header {
+          font-size: 1.3rem;
+        }
+      }
 
       .footer_text {
         color: rgba(255, 255, 255, 0.71);
@@ -877,6 +1075,12 @@ html body {
         .footer_text {
           font-size: 0.5rem;
           line-height: 16px;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1200px) {
+        .footer_text {
+          font-size: 0.8rem;
+          line-height: 28px;
         }
       }
 
@@ -898,6 +1102,12 @@ html body {
         .big_link {
           font-size: 8px;
           line-height: 8px;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1200px) {
+        .big_link {
+          font-size: 0.8rem;
+          line-height: 14px;
         }
       }
 
@@ -925,6 +1135,11 @@ html body {
           font-size: 7px;
         }
       }
+      @media (min-width: 768px) and (max-width: 1200px) {
+        .small_link {
+          font-size: 0.7rem;
+        }
+      }
 
       .last_text {
         color: $background;
@@ -938,6 +1153,11 @@ html body {
       @media (min-width: 375px) and (max-width: 768px) {
         .last_text {
           font-size: 0.5rem;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1200px) {
+        .last_text {
+          font-size: 0.7rem;
         }
       }
     }
@@ -959,6 +1179,14 @@ html body {
           padding-left: 15px;
           padding-right: 0;
         }
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .my_footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-right: 5px;
+        margin-left: 5px;
       }
     }
   }
