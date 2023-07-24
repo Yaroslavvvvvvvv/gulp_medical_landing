@@ -11,6 +11,8 @@ html body {
   width: 100%;
   font-size: $font-size;
   color: $text;
+  padding-top: 210.2px;
+
 
   h1 {
     font-size: 3.125rem;
@@ -37,6 +39,12 @@ html body {
   }
 
   header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-color: $background;
 
     .first_nav_item {
       padding-left: 16px;
@@ -92,6 +100,24 @@ html body {
       }
     }
 
+    @include media-breakpoint-down(xs) {
+      .shadow_container {
+        display: none;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      .shadow_container{
+        display: none;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      .shadow_container{
+        display: none;
+      }
+      .small_menu {
+        display: flex;
+      }
+    }
     @media (min-width: 375px) and (max-width: 768px) {
       .first_nav_item {
         padding-left: 0;
@@ -104,6 +130,7 @@ html body {
       }
     }
     @media (min-width: 768px) and (max-width: 1200px) {
+
       .first_nav_item {
         padding-left: 0;
       }

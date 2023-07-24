@@ -10,11 +10,11 @@ html(lang='en')
         '=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,' +
         '300;1,400;1,500;1,600;1,700;1,800&display=swap' rel='stylesheet')
         link(rel='stylesheet' href='./css/style.css')
-    body
+    body#top
         header
-            .container.pl-0.pr-0.pt-4.pb-4
+            .container.pl-0.pr-0.pt-4.pb-4.shadow_container
                     nav.navbar.navbar-expand-lg.pl-0.pr-0
-                        a.navbar-brand.my_brand(href='#')
+                        a.navbar-brand.my_brand(href='#top')
                             img(src='./images/header/logo.svg' alt='logo' class='mw-100')
                         ul.navbar-nav.ml-auto
                             li.nav-item.pr-3
@@ -37,16 +37,16 @@ html(lang='en')
                 nav.navbar.navbar-expand-lg.ml-auto.mr-auto
                     button.navbar-toggler.collapsed.my_menu(type='button' data-toggle='collapse' data-target='#navbarSupportedContent')
                         span.navbar-toggler-icon.icon_menu
-                    #navbarSupportedContent.collapse.navbar-collapse
-                        ul.navbar-nav.mr-auto
+                    #navbarSupportedContent.collapse.navbar-collapse.small_menu
+                        ul.navbar-nav.mr-auto.small_menu
                             li.nav-item.pr-5
-                                a.nav-link.down_link(href='#') HOME
+                                a.nav-link.down_link(href='#top') HOME
                             li.nav-item.pr-5
-                                a.nav-link.down_link(href='#') ABOUT US
+                                a.nav-link.down_link(href='#sect_3') ABOUT US
                             li.nav-item.pr-5
-                                a.nav-link.down_link(href='#') SERVICES
+                                a.nav-link.down_link(href='#sect_2') SERVICES
                             li.nav-item.pr-5
-                                a.nav-link.down_link(href='#') APPOINTMENT
+                                a.nav-link.down_link(href='#sect_4') APPOINTMENT
                             li.nav-item.dropdown.pr-5
                                 a#navbarPages.nav-link.dropdown-toggle.down_link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
                                     | PAGES
@@ -64,8 +64,8 @@ html(lang='en')
                                     .dropdown-divider
                                     a.dropdown-item(href='#') Something else here
                             li.nav-item.pr-5
-                                a.nav-link.down_link(href='#') CONTACT
-                        ul.navbar-nav.ml-auto
+                                a.nav-link.down_link(href='#bottom') CONTACT
+                        ul.navbar-nav.ml-auto.small_menu
                             li.nav-item
                                 a.nav-link.social_link(href='#')
                                     img(src='images/header/facebook_logo.svg' alt='facebook logo' class='mw-100')
@@ -94,7 +94,7 @@ html(lang='en')
                     .row
                         .col-lg-6.col-md-12.col-sm-12
                             div.left_second
-                                a(href='#' class='link_second') Medical Services
+                                a(href='#' class='link_second' id='sect_2') Medical Services
                                 h2.second_header We Maintain Regular<br>Procedures
                                 p.second_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non
                                     <br>gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor
@@ -153,7 +153,7 @@ html(lang='en')
                                         img(src='./images/on_doctor.png' alt='doctor' class='mw-100')
 
                         .col-lg-6.col-md-6.col-sm-12
-                            a(href='#' class='link_third') About MedicaLife
+                            a(href='#' class='link_third' id='sect_3') About MedicaLife
                             h5 We Provide Essential Services For<br>Your Health Care
                             p.pb-4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                 <br>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -245,7 +245,7 @@ html(lang='en')
 
                         .col-lg-6.col-md-6.col-sm-12
                             div.left_fourth.pt-5.mt-5
-                                a(href='#' class='link_fourth') APPOINTMENT
+                                a(href='#' class='link_fourth' id='sect_4') APPOINTMENT
                                 h2.fourth_header Make An<br>Appointment And<br>Get Treatment
                                 p.fourth_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 div.my_fourth_button
@@ -279,7 +279,7 @@ html(lang='en')
                             span.name Dani John
                             br
                             span.job Buisnessmen
-        footer
+        footer#bottom
             .container
                 .d-flex.justify-content-between.my_footer.row
                     div
