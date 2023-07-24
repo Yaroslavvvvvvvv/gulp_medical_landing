@@ -104,14 +104,20 @@ html body {
       .shadow_container {
         display: none;
       }
+      .small_menu {
+        display: flex;
+      }
     }
     @include media-breakpoint-down(sm) {
-      .shadow_container{
+      .shadow_container {
         display: none;
+      }
+      .small_menu {
+        display: flex;
       }
     }
     @include media-breakpoint-down(md) {
-      .shadow_container{
+      .shadow_container {
         display: none;
       }
       .small_menu {
@@ -1216,6 +1222,26 @@ html body {
         margin-left: 5px;
       }
     }
+  }
+}
+@include media-breakpoint-down(xs) {
+  html body {
+    padding-top: 260.2px;
+  }
+}
+@include media-breakpoint-down(sm) {
+  html body {
+    padding-top: 260.2px;
+  }
+}
+@include media-breakpoint-down(md) {
+  html body {
+    padding-top: 260.2px;
+  }
+}
+@include media-breakpoint-down(lg) {
+  html body {
+    padding-top: 157.2px;
   }
 }
 
