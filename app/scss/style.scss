@@ -11,7 +11,7 @@ html body {
   width: 100%;
   font-size: $font-size;
   color: $text;
-  padding-top: 210.2px;
+  padding-top: 162.2px;
 
 
   h1 {
@@ -45,6 +45,10 @@ html body {
     top: 0;
     z-index: 2;
     background-color: $background;
+
+    .header_container{
+      padding-top: 24px;
+    }
 
     .first_nav_item {
       padding-left: 16px;
@@ -101,6 +105,9 @@ html body {
     }
 
     @include media-breakpoint-down(xs) {
+      .container {
+        padding-top: 0;
+      }
       .shadow_container {
         display: none;
       }
@@ -109,6 +116,9 @@ html body {
       }
     }
     @include media-breakpoint-down(sm) {
+      .container {
+        padding-top: 0;
+      }
       .shadow_container {
         display: none;
       }
@@ -117,6 +127,9 @@ html body {
       }
     }
     @include media-breakpoint-down(md) {
+      .container {
+        padding-top: 0;
+      }
       .shadow_container {
         display: none;
       }
@@ -1224,21 +1237,25 @@ html body {
     }
   }
 }
+
 @include media-breakpoint-down(xs) {
   html body {
-    padding-top: 260.2px;
+    padding-top: 236.2px;
   }
 }
+
 @include media-breakpoint-down(sm) {
   html body {
-    padding-top: 260.2px;
+    padding-top: 236.2px;
   }
 }
+
 @include media-breakpoint-down(md) {
   html body {
-    padding-top: 260.2px;
+    padding-top: 105.2px;
   }
 }
+
 @include media-breakpoint-down(lg) {
   html body {
     padding-top: 157.2px;
