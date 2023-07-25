@@ -46,7 +46,7 @@ html body {
     z-index: 2;
     background-color: $background;
 
-    .header_container{
+    .header_container {
       padding-top: 24px;
     }
 
@@ -993,6 +993,15 @@ html body {
   .sixth_section {
     background: $my_background;
     padding-bottom: 119px;
+    @media (min-width: 375px) and (max-width: 767.8px) {
+      .about_us {
+        flex-direction: column;
+
+        .clients {
+          text-align: center;
+        }
+      }
+    }
 
     .sixth_link {
       text-decoration: none;
@@ -1023,6 +1032,16 @@ html body {
       font-weight: 400;
       line-height: normal;
     }
+
+    @media (min-width: 768px) and (max-width: 991.8px) {
+
+      .sixth_text {
+        br {
+          display: none;
+        }
+      }
+    }
+
 
     .sixth_link:hover {
       color: #f5bf62;
@@ -1240,25 +1259,25 @@ html body {
 
 @include media-breakpoint-down(xs) {
   html body {
-    padding-top: 236.2px;
+    padding-top: 129.2px;
   }
 }
 
 @include media-breakpoint-down(sm) {
   html body {
-    padding-top: 236.2px;
+    padding-top: 129.2px;
   }
 }
 
 @include media-breakpoint-down(md) {
   html body {
-    padding-top: 105.2px;
+    padding-top: 129.2px;
   }
 }
 
 @include media-breakpoint-down(lg) {
   html body {
-    padding-top: 157.2px;
+    padding-top: 162.2px;
   }
 }
 
