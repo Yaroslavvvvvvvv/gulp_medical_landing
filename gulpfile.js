@@ -87,7 +87,7 @@ function watchCode() {
 
 
 exports.default = series(buildStyles, buildHtml, buildJs, copyImage, parallel(startLocalServer, watchCode))
-exports.build = series(buildStyles, buildHtml, buildJs);
+exports.build = series(buildStyles, buildHtml, buildJs, copyImage);
 
 
 
