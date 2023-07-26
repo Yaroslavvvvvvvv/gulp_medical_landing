@@ -381,7 +381,7 @@ html body {
         }
       }
       @include media-breakpoint-down(xs) {
-        .second_header{
+        .second_header {
           font-size: 2.2rem;
           line-height: 50px;
         }
@@ -391,9 +391,16 @@ html body {
         }
       }
     }
+
+    @include media-breakpoint-down(lg) {
+      .left_second {
+        padding-top: 280px;
+      }
+    }
     @include media-breakpoint-down(md) {
       .left_second {
         text-align: center;
+        padding-top: 50px;
       }
     }
 
@@ -403,12 +410,20 @@ html body {
       padding-bottom: 214px;
     }
 
+
     @include media-breakpoint-down(lg) {
+      .modal_left {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    }
+    @include media-breakpoint-down(sm) {
       .modal_left {
         padding-top: 50px;
         padding-bottom: 3px;
       }
     }
+
 
     .modal_right {
       padding-top: 207px;
@@ -417,8 +432,14 @@ html body {
 
     @include media-breakpoint-down(lg) {
       .modal_right {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 80px;
+        padding-bottom: 3px;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      .modal_right {
+        padding-top: 0;
+        padding-bottom: 3px;
       }
     }
 
@@ -433,6 +454,7 @@ html body {
         margin-left: auto;
         margin-right: auto;
       }
+
 
       .modal_link {
         a {
@@ -470,20 +492,20 @@ html body {
         font-weight: 400;
         line-height: 22.4px;
       }
-    }
 
-    @media (min-width: 375px) and (max-width: 768px) {
-      .modal_block {
-        max-width: 100%;
-        margin-right: auto;
-        margin-left: auto;
+      @include media-breakpoint-down(sm) {
+        h6 {
+          font-size: 1.7rem;
+        }
+        p {
+          font-size: 1.1rem;
+        }
       }
     }
-    @media (min-width: 768px) and (max-width: 1200px) {
+
+    @include media-breakpoint-down(md) {
       .modal_block {
         max-width: 100%;
-        margin-right: auto;
-        margin-left: auto;
       }
     }
   }
