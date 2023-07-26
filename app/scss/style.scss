@@ -242,24 +242,6 @@ html body {
       padding-top: 60px;
     }
 
-    @media (min-width: 375px) and (max-width: 768px) {
-      .first_header {
-        font-size: 1rem;
-        line-height: 20px;
-        padding-left: 40px;
-        padding-top: 10px;
-      }
-    }
-    @media (min-width: 768px) and (max-width: 1200px) {
-      .first_header {
-        padding-left: 20px;
-        padding-top: 20px;
-        font-size: 2.34rem;
-        line-height: 40px;
-      }
-    }
-
-
     .first_paragraph {
       color: #414154;
       font-family: 'DM Sans', sans-serif;
@@ -267,23 +249,6 @@ html body {
       font-weight: 400;
       line-height: 24px;
       padding-left: 100px;
-    }
-
-    @media (min-width: 375px) and (max-width: 768px) {
-      .first_paragraph {
-        font-size: 0.3rem;
-        line-height: 10px;
-        padding-left: 40px;
-        margin-bottom: 1px;
-      }
-    }
-    @media (min-width: 768px) and (max-width: 1200px) {
-      .first_paragraph {
-        font-size: 0.75rem;
-        line-height: 16px;
-        padding-left: 20px;
-        margin-bottom: 16px;
-      }
     }
 
     .header_button {
@@ -305,18 +270,74 @@ html body {
       transition: 0.5s;
     }
 
-    @media (min-width: 375px) and (max-width: 768px) {
-      .header_button {
-        font-size: 0.3rem;
-        line-height: 8px;
+    @include media-breakpoint-down(lg) {
+      .first_header{
+        font-size: 2.8rem;
+        line-height: 50px;
+        padding-top: 50px;
+        padding-left: 50px;
+      }
+      .first_paragraph{
+        padding-left: 50px;
+      }
+      .header_button{
+        margin-left: 50px;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      .first_header{
+        font-size: 2.1rem;
+        line-height: 40px;
+        padding-top: 40px;
+        padding-left: 40px;
+      }
+      .first_paragraph{
+        padding-left: 40px;
+        font-size: 0.7rem;
+        line-height: 18px;
+      }
+      .header_button{
         margin-left: 40px;
       }
     }
-    @media (min-width: 768px) and (max-width: 1200px) {
-      .header_button {
-        font-size: 0.75rem;
+    @include media-breakpoint-down(sm) {
+      .first_header{
+        font-size: 1.5rem;
+        line-height: 30px;
+        padding-top: 30px;
+        padding-left: 30px;
+        margin-bottom: 2px;
+      }
+      .first_paragraph{
+        padding-left: 30px;
+        font-size: 0.5rem;
         line-height: 16px;
-        margin-left: 20px;
+        margin-bottom: 2px;
+      }
+      .header_button{
+        margin-left: 30px;
+        font-size: 0.5rem;
+        line-height: 8px;
+      }
+    }
+    @include media-breakpoint-down(xs) {
+      .first_header{
+        font-size: 1rem;
+        line-height: 20px;
+        padding-top: 15px;
+        padding-left: 15px;
+        margin-bottom: 2px;
+      }
+      .first_paragraph{
+        padding-left: 15px;
+        font-size: 0.4rem;
+        line-height: 8px;
+        margin-bottom: 2px;
+      }
+      .header_button{
+        margin-left: 15px;
+        font-size: 0.5rem;
+        line-height: 6px;
       }
     }
   }
@@ -339,18 +360,6 @@ html body {
         text-decoration: none;
       }
 
-      @media (min-width: 375px) and (max-width: 768px) {
-        .link_second {
-          font-size: 0.5rem;
-        }
-      }
-      @media (min-width: 768px) and (max-width: 1200px) {
-        .link_second {
-          font-size: 0.8rem;
-        }
-      }
-
-
       .second_header {
         color: $dark;
         font-family: 'Inter', sans-serif;
@@ -360,17 +369,17 @@ html body {
 
       }
 
-      @media (min-width: 375px) and (max-width: 768px) {
+      @include media-breakpoint-down(xs) {
         .second_header {
-          font-size: 1.7rem;
-          line-height: 38.5px;
-          text-align: center;
+          font-size: 2.2rem;
+          line-height: 40px;
+
         }
       }
-      @media (min-width: 768px) and (max-width: 1200px) {
+      @include media-breakpoint-up(sm) {
         .second_header {
-          font-size: 2.8rem;
-          line-height: 50px;
+          font-size: 3.3rem;
+          line-height: 60px;
         }
       }
 
@@ -401,11 +410,13 @@ html body {
     @media (min-width: 375px) and (max-width: 768px) {
       .left_second {
         padding-top: 50px;
+        text-align: center;
       }
     }
     @media (min-width: 768px) and (max-width: 1200px) {
       .left_second {
         padding-top: 50px;
+        text-align: center;
       }
     }
 
