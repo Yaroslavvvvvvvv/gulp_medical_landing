@@ -521,7 +521,7 @@ html body {
       background: #0067FF;
     }
 
-    @media (min-width: 375px) and (max-width: 768px) {
+    @include media-breakpoint-down(md) {
       .third_left {
         width: 100%;
         margin-right: auto;
@@ -533,13 +533,14 @@ html body {
       margin-top: 405px;
     }
 
-    @media (min-width: 375px) and (max-width: 768px) {
+    @include media-breakpoint-down(sm) {
       .small_third {
         margin-top: 410px;
         margin-left: auto;
         margin-right: auto;
       }
     }
+
 
     .link_third {
       text-decoration: none;
@@ -550,14 +551,10 @@ html body {
       line-height: 18px;
     }
 
-    @media (min-width: 375px) and (max-width: 768px) {
-      .link_third {
-        font-size: 0.5rem;
-      }
-    }
-    @media (min-width: 768px) and (max-width: 1200px) {
-      .link_third {
-        font-size: 0.8rem;
+    @include media-breakpoint-down(sm) {
+      .about_medical {
+        text-align: center;
+        padding-top: 50px;
       }
     }
 
@@ -566,21 +563,6 @@ html body {
       font-style: normal;
       font-weight: 700;
       line-height: 38.4px;
-    }
-
-    @media (min-width: 375px) and (max-width: 768px) {
-      h5 {
-        font-size: 1rem;
-        line-height: 19.2px;
-        text-align: center;
-      }
-    }
-    @media (min-width: 768px) and (max-width: 1200px) {
-      h5 {
-        font-size: 1.5rem;
-        line-height: 28.8px;
-        text-align: left;
-      }
     }
 
 
@@ -592,23 +574,59 @@ html body {
       font-size: 14px;
     }
 
-    @media (min-width: 375px) and (max-width: 768px) {
-      p {
-        font-size: 7px;
-        line-height: 12px;
+    @include media-breakpoint-down(lg) {
+      .link_third {
+        font-size: 1.5rem;
+        line-height: 22.4px;
       }
-    }
-    @media (min-width: 768px) and (max-width: 1200px) {
+      h5 {
+        font-size: 1.7rem;
+      }
       p {
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 1rem;
+        line-height: 22.4px;
 
         br {
           display: none;
         }
       }
     }
+    @include media-breakpoint-down(md) {
+      h5 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 22.4px;
+      }
+    }
+    @include media-breakpoint-down(sm) {
 
+      h5 {
+        font-size: 1.9rem;
+        line-height: 50px;
+      }
+      p {
+        font-size: 1.3rem;
+        line-height: 30px;
+      }
+    }
+    @include media-breakpoint-down(xs) {
+
+      h5 {
+        font-size: 1.3rem;
+        line-height: 40px;
+      }
+      p {
+        font-size: 1.1rem;
+        line-height: 25px;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      .quality{
+        text-align: center;
+      }
+    }
     .third_header {
       font-family: 'Inter', sans-serif;
       font-style: normal;
