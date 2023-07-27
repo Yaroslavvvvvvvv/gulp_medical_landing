@@ -623,16 +623,18 @@ html body {
       }
     }
     @include media-breakpoint-down(sm) {
-      .quality{
+      .quality {
         text-align: center;
       }
     }
+
     .third_header {
       font-family: 'Inter', sans-serif;
       font-style: normal;
       font-weight: 700;
       line-height: 19.2px;
     }
+
 
     .third_right {
       padding-bottom: 170px;
@@ -642,7 +644,7 @@ html body {
         border-radius: 50px;
         background: #0067FF;
         font-family: 'DM Sans', sans-serif;
-        font-size: 16px;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 700;
         line-height: 16px;
@@ -654,22 +656,17 @@ html body {
         transition: 0.5s;
       }
 
-      @media (min-width: 375px) and (max-width: 768px) {
+      @include media-breakpoint-down(sm) {
         .third_button {
-          font-size: 8px;
-          line-height: 8px;
-
-        }
-      }
-      @media (min-width: 768px) and (max-width: 1200px) {
-        .third_button {
-          font-size: 14px;
-
+          font-size: 16px;
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
         }
       }
     }
 
-    @media (min-width: 375px) and (max-width: 768px) {
+    @include media-breakpoint-down(lg) {
       .third_right {
         padding-bottom: 20px;
         display: flex;
@@ -677,14 +674,7 @@ html body {
         align-items: center;
       }
     }
-    @media (min-width: 768px) and (max-width: 1200px) {
-      .third_right {
-        padding-bottom: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
+
 
     .next {
       padding-top: 167px;
@@ -698,18 +688,9 @@ html body {
         line-height: 60px;
       }
 
-      @media (min-width: 375px) and (max-width: 768px) {
+      @include media-breakpoint-down(sm) {
         .third_next_header {
-          line-height: 30px;
-          font-size: 25px;
           text-align: center;
-        }
-      }
-      @media (min-width: 768px) and (max-width: 1200px) {
-        .third_next_header {
-          line-height: 30px;
-          font-size: 40px;
-          text-align: left;
         }
       }
 
@@ -721,14 +702,27 @@ html body {
         line-height: 24px;
       }
 
-      @media (min-width: 375px) and (max-width: 768px) {
+      @include media-breakpoint-down(lg) {
         .third_next_text {
-          font-size: 7.5px;
-          line-height: 12px;
+          font-size: 1rem;
+          line-height: 22.4px;
 
           br {
             display: none;
           }
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        .third_next_text {
+          text-align: center;
+          font-size: 1.3rem;
+          line-height: 30px;
+        }
+      }
+      @include media-breakpoint-down(xs) {
+        .third_next_text {
+          font-size: 1.1rem;
+          line-height: 25px;
         }
       }
 
@@ -741,6 +735,7 @@ html body {
         background: #4C40F7;
         border-radius: 25px;
       }
+
 
       span {
         font-family: 'Inter', sans-serif;
@@ -760,32 +755,27 @@ html body {
       }
     }
 
-    @media (min-width: 375px) and (max-width: 768px) {
+    @include media-breakpoint-down(sm) {
+      .logo_center{
+        justify-content: center;
+      }
+    }
+    @include media-breakpoint-down(lg) {
       .next {
         padding-top: 5px;
         padding-bottom: 50px;
       }
     }
-    @media (min-width: 768px) and (max-width: 1200px) {
-      .next {
-        padding-top: 5px;
-        padding-bottom: 50px;
-      }
-    }
-  }
 
-  @media (min-width: 375px) and (max-width: 768px) {
+
+  }
+  @include media-breakpoint-down(lg) {
     .third_section {
       padding-top: 50px;
       padding-bottom: 50px;
     }
   }
-  @media (min-width: 768px) and (max-width: 1200px) {
-    .third_section {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-  }
+  
 
   .fourth_section {
     background: $my_background;
