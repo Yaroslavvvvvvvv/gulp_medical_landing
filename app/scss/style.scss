@@ -775,7 +775,7 @@ html body {
       padding-bottom: 50px;
     }
   }
-  
+
 
   .fourth_section {
     background: $my_background;
@@ -819,16 +819,7 @@ html body {
         margin-top: 50px;
       }
     }
-
-    @media (min-width: 375px) and (max-width: 768px) {
-      .fourth_block {
-        max-width: 100%;
-        top: auto;
-        bottom: 0;
-        margin: 20px;
-      }
-    }
-    @media (min-width: 768px) and (max-width: 1200px) {
+    @include media-breakpoint-down(lg) {
       .fourth_block {
         max-width: 100%;
         top: auto;
@@ -846,19 +837,6 @@ html body {
       line-height: 22.4px;
     }
 
-    @media (min-width: 375px) and (max-width: 768px) {
-      .link_fourth {
-        font-size: 0.5rem;
-        line-height: 12.2px;
-      }
-    }
-    @media (min-width: 768px) and (max-width: 1200px) {
-      .link_fourth {
-        font-size: 0.8rem;
-        line-height: 16.8px;
-      }
-    }
-
     .link_fourth:hover {
       text-decoration: none;
     }
@@ -871,22 +849,6 @@ html body {
       line-height: 77px;
     }
 
-    @media (min-width: 375px) and (max-width: 768px) {
-      .fourth_header {
-        font-size: 25.2px;
-        line-height: 38.5px;
-        text-align: center;
-      }
-    }
-    @media (min-width: 768px) and (max-width: 1200px) {
-      .fourth_header {
-        font-size: 2.3rem;
-        line-height: 50px;
-        text-align: left;
-      }
-    }
-
-
     .fourth_text {
       font-family: 'DM Sans', sans-serif;
       font-size: 0.875rem;
@@ -895,16 +857,55 @@ html body {
       line-height: 22.4px;
       letter-spacing: 0.28px;
     }
-
-    @media (min-width: 375px) and (max-width: 768px) {
-      .fourth_text {
-        font-size: 0.4375rem;
-        line-height: 11.2px;
+    @include media-breakpoint-down(lg) {
+      .left_fourth{
+        text-align: center;
+      }
+      .link_fourth{
+        font-size: 1.5rem;
+        line-height: 22.4px;
+      }
+      .fourth_header{
+        font-size: 3.125rem;
+        line-height: 60px;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      .left_fourth{
+        text-align: left;
+      }
+      .fourth_header{
+        font-size: 2.5rem;
+      }
+      .fourth_text{
+        font-size: 1rem;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      .left_fourth{
+        text-align: center;
+      }
+      .fourth_header{
+        font-size: 3.125rem;
+      }
+      .fourth_text{
+        font-size: 1.3rem;
+        line-height: 30px;
+      }
+    }
+    @include media-breakpoint-down(xs) {
+      .fourth_header{
+        font-size: 2.6rem;
+      }
+      .fourth_text{
+        font-size: 1.1rem;
+        line-height: 25px;
       }
     }
 
+
     .my_fourth_button {
-      text-align: center;
+      text-align: left;
 
       .fourth_button {
         color: #F8FAFD;
@@ -922,30 +923,23 @@ html body {
         color: $background;
         transition: 0.5s;
       }
-
-      @media (min-width: 375px) and (max-width: 768px) {
-        .fourth_button {
-          font-size: 0.5rem;
-          line-height: 8px;
-          text-align: center;
+      @include media-breakpoint-down(sm){
+        .fourth_button{
+          font-size: 16px;
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
         }
       }
-      @media (min-width: 768px) and (max-width: 1200px) {
-        .fourth_button {
-          font-size: 14px;
-          text-align: center;
-        }
+    }
+    @include media-breakpoint-down(md) {
+      .my_fourth_button{
+        text-align: center;
       }
     }
   }
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    .fourth_section {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-  }
-  @media (min-width: 768px) and (max-width: 1200px) {
+  @include media-breakpoint-down(lg) {
     .fourth_section {
       padding-top: 50px;
       padding-bottom: 50px;
