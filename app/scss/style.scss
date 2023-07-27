@@ -1080,8 +1080,9 @@ html body {
       font-weight: 700;
       line-height: normal;
     }
+
     @include media-breakpoint-down(sm) {
-      .name{
+      .name {
         font-size: 2rem;
       }
     }
@@ -1093,12 +1094,14 @@ html body {
       font-weight: 400;
       line-height: normal;
     }
+
     @include media-breakpoint-down(sm) {
-      .job{
+      .job {
         font-size: 1.5rem;
       }
     }
   }
+
   @include media-breakpoint-down(lg) {
     .sixth_section {
       padding-bottom: 50px;
@@ -1124,15 +1127,16 @@ html body {
         margin-right: 20px;
       }
 
-      @media (min-width: 375px) and (max-width: 768px) {
+
+      @include media-breakpoint-down(lg) {
         .footer_logo {
-          font-size: 0.5625rem;
+          font-size: 1rem;
           margin-right: 10px;
         }
       }
-      @media (min-width: 768px) and (max-width: 1200px) {
+      @include media-breakpoint-down(sm) {
         .footer_logo {
-          font-size: 1rem;
+          font-size: 2rem;
           margin-right: 10px;
         }
       }
@@ -1146,14 +1150,14 @@ html body {
         line-height: normal;
       }
 
-      @media (min-width: 375px) and (max-width: 768px) {
+      @include media-breakpoint-down(sm) {
         .footer_header {
-          font-size: 0.75rem;
+          font-size: 1.8rem;
         }
       }
-      @media (min-width: 768px) and (max-width: 1200px) {
+      @include media-breakpoint-down(xs) {
         .footer_header {
-          font-size: 1.3rem;
+          font-size: 1rem;
         }
       }
 
@@ -1165,16 +1169,16 @@ html body {
         line-height: 32px;
       }
 
-      @media (min-width: 375px) and (max-width: 768px) {
-        .footer_text {
-          font-size: 0.5rem;
-          line-height: 16px;
-        }
-      }
-      @media (min-width: 768px) and (max-width: 1200px) {
+      @include media-breakpoint-down(sm) {
         .footer_text {
           font-size: 0.8rem;
-          line-height: 28px;
+          line-height: 25px;
+        }
+      }
+      @include media-breakpoint-down(xs) {
+        .footer_text {
+          font-size: 0.5rem;
+          line-height: 25px;
         }
       }
 
@@ -1192,16 +1196,16 @@ html body {
         transition: 0.5s;
       }
 
-      @media (min-width: 375px) and (max-width: 768px) {
+      @include media-breakpoint-down(sm) {
         .big_link {
-          font-size: 8px;
-          line-height: 8px;
+          font-size: 0.6rem;
+          line-height: 14px;
         }
       }
-      @media (min-width: 768px) and (max-width: 1200px) {
+      @include media-breakpoint-down(xs) {
         .big_link {
-          font-size: 0.8rem;
-          line-height: 14px;
+          font-size: 0.5rem;
+          line-height: 16px;
         }
       }
 
@@ -1224,14 +1228,16 @@ html body {
         transition: 0.5s;
       }
 
-      @media (min-width: 375px) and (max-width: 768px) {
+      @include media-breakpoint-down(sm) {
         .small_link {
-          font-size: 7px;
+          font-size: 0.6rem;
+          line-height: 14px;
         }
       }
-      @media (min-width: 768px) and (max-width: 1200px) {
+      @include media-breakpoint-down(xs) {
         .small_link {
-          font-size: 0.7rem;
+          font-size: 0.4rem;
+          line-height: 14px;
         }
       }
 
@@ -1244,43 +1250,36 @@ html body {
         line-height: 180%;
       }
 
-      @media (min-width: 375px) and (max-width: 768px) {
+      @include media-breakpoint-down(sm) {
         .last_text {
           font-size: 0.5rem;
         }
       }
-      @media (min-width: 768px) and (max-width: 1200px) {
+      @include media-breakpoint-down(xs) {
         .last_text {
-          font-size: 0.7rem;
+          font-size: 0.4rem;
         }
       }
     }
 
-    @media (min-width: 375px) and (max-width: 768px) {
+    @include media-breakpoint-down(sm) {
       .my_footer {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-right: 5px;
-        margin-left: 5px;
-
-        .right_footer {
-          display: flex;
-          flex-direction: column;
-        }
-
-        .my_footer_link {
-          padding-top: 2px;
-          padding-left: 15px;
-          padding-right: 0;
-        }
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-left: 0;
+        margin-right: 0;
       }
     }
-    @media (min-width: 768px) and (max-width: 1200px) {
+    @include media-breakpoint-down(xs) {
       .my_footer {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-right: 5px;
-        margin-left: 5px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+      }
+      .right_footer{
+        padding-left: 14px;
+      }
+      .my_footer_link {
+        padding: 0.1rem;
       }
     }
   }
