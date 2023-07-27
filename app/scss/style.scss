@@ -378,6 +378,7 @@ html body {
         .second_text {
           font-size: 1.3rem;
           line-height: 30px;
+          text-align: left;
         }
       }
       @include media-breakpoint-down(xs) {
@@ -609,6 +610,7 @@ html body {
       p {
         font-size: 1.3rem;
         line-height: 30px;
+        text-align: left;
       }
     }
     @include media-breakpoint-down(xs) {
@@ -714,7 +716,7 @@ html body {
       }
       @include media-breakpoint-down(sm) {
         .third_next_text {
-          text-align: center;
+          text-align: left;
           font-size: 1.3rem;
           line-height: 30px;
         }
@@ -756,7 +758,7 @@ html body {
     }
 
     @include media-breakpoint-down(sm) {
-      .logo_center{
+      .logo_center {
         justify-content: center;
       }
     }
@@ -769,6 +771,7 @@ html body {
 
 
   }
+
   @include media-breakpoint-down(lg) {
     .third_section {
       padding-top: 50px;
@@ -819,6 +822,7 @@ html body {
         margin-top: 50px;
       }
     }
+
     @include media-breakpoint-down(lg) {
       .fourth_block {
         max-width: 100%;
@@ -857,47 +861,49 @@ html body {
       line-height: 22.4px;
       letter-spacing: 0.28px;
     }
+
     @include media-breakpoint-down(lg) {
-      .left_fourth{
+      .left_fourth {
         text-align: center;
       }
-      .link_fourth{
+      .link_fourth {
         font-size: 1.5rem;
         line-height: 22.4px;
       }
-      .fourth_header{
+      .fourth_header {
         font-size: 3.125rem;
         line-height: 60px;
       }
     }
     @include media-breakpoint-down(md) {
-      .left_fourth{
+      .left_fourth {
         text-align: left;
       }
-      .fourth_header{
+      .fourth_header {
         font-size: 2.5rem;
       }
-      .fourth_text{
+      .fourth_text {
         font-size: 1rem;
       }
     }
     @include media-breakpoint-down(sm) {
-      .left_fourth{
+      .left_fourth {
         text-align: center;
       }
-      .fourth_header{
+      .fourth_header {
         font-size: 3.125rem;
       }
-      .fourth_text{
+      .fourth_text {
         font-size: 1.3rem;
         line-height: 30px;
+        text-align: left;
       }
     }
     @include media-breakpoint-down(xs) {
-      .fourth_header{
+      .fourth_header {
         font-size: 2.6rem;
       }
-      .fourth_text{
+      .fourth_text {
         font-size: 1.1rem;
         line-height: 25px;
       }
@@ -923,8 +929,9 @@ html body {
         color: $background;
         transition: 0.5s;
       }
-      @include media-breakpoint-down(sm){
-        .fourth_button{
+
+      @include media-breakpoint-down(sm) {
+        .fourth_button {
           font-size: 16px;
           border-radius: 50%;
           width: 100px;
@@ -932,8 +939,9 @@ html body {
         }
       }
     }
+
     @include media-breakpoint-down(md) {
-      .my_fourth_button{
+      .my_fourth_button {
         text-align: center;
       }
     }
@@ -967,20 +975,21 @@ html body {
       letter-spacing: 0.16px;
       text-transform: capitalize;
     }
+
     @include media-breakpoint-down(lg) {
-      .fifth_header{
+      .fifth_header {
         font-size: 2.875rem;
       }
-      .fifth_text{
+      .fifth_text {
         font-size: 1rem;
       }
     }
     @include media-breakpoint-down(xs) {
-      .fifth_header{
+      .fifth_header {
         font-size: 1.9rem;
         line-height: 30px;
       }
-      .fifth_text{
+      .fifth_text {
         font-size: 0.7rem;
       }
     }
@@ -989,7 +998,7 @@ html body {
   .sixth_section {
     background: $my_background;
     padding-bottom: 119px;
-    @media (min-width: 375px) and (max-width: 767.8px) {
+    @include media-breakpoint-down(sm) {
       .about_us {
         flex-direction: column;
 
@@ -1009,15 +1018,23 @@ html body {
       line-height: 18;
     }
 
-    @media (min-width: 375px) and (max-width: 768px) {
+    @include media-breakpoint-down(lg) {
       .sixth_link {
-        font-size: 0.5rem;
-        line-height: 8px;
+        font-size: 1.5rem;
+        line-height: 22.4px;
+      }
+      h5 {
+        font-size: 2.875rem;
       }
     }
-    @media (min-width: 768px) and (max-width: 1200px) {
-      .sixth_link {
-        font-size: 14px;
+    @include media-breakpoint-down(sm) {
+      h5 {
+        font-size: 2.5rem;
+      }
+    }
+    @include media-breakpoint-down(xs) {
+      h5 {
+        font-size: 1.7rem;
       }
     }
 
@@ -1029,12 +1046,24 @@ html body {
       line-height: normal;
     }
 
-    @media (min-width: 768px) and (max-width: 991.8px) {
-
+    @include media-breakpoint-down(md) {
       .sixth_text {
         br {
           display: none;
         }
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      .sixth_text {
+        font-size: 1.3rem;
+        text-align: left;
+      }
+    }
+    @include media-breakpoint-down(xs) {
+      .sixth_text {
+        font-size: 1.1rem;
+        line-height: 25px;
       }
     }
 
@@ -1051,6 +1080,11 @@ html body {
       font-weight: 700;
       line-height: normal;
     }
+    @include media-breakpoint-down(sm) {
+      .name{
+        font-size: 2rem;
+      }
+    }
 
     .job {
       color: #A7A9AC;
@@ -1059,20 +1093,19 @@ html body {
       font-weight: 400;
       line-height: normal;
     }
+    @include media-breakpoint-down(sm) {
+      .job{
+        font-size: 1.5rem;
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .sixth_section {
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
   }
 
-  @media (min-width: 375px) and (max-width: 768px) {
-    .sixth_section {
-      padding-bottom: 50px;
-      padding-top: 50px;
-    }
-  }
-  @media (min-width: 768px) and (max-width: 1200px) {
-    .sixth_section {
-      padding-bottom: 50px;
-      padding-top: 50px;
-    }
-  }
 
   footer {
     background: black;
