@@ -958,21 +958,6 @@ html body {
       line-height: 56px;
     }
 
-    @media (min-width: 375px) and (max-width: 768px) {
-      .fifth_header {
-        padding-top: 0;
-        font-size: 1.4375rem;
-        line-height: 28px;
-      }
-    }
-    @media (min-width: 768px) and (max-width: 1200px) {
-      .fifth_header {
-        padding-top: 0;
-        font-size: 2.16rem;
-        line-height: 42px;
-      }
-    }
-
     .fifth_text {
       text-align: center;
       font-family: 'Inter', sans-serif;
@@ -982,16 +967,21 @@ html body {
       letter-spacing: 0.16px;
       text-transform: capitalize;
     }
-
-    @media (min-width: 375px) and (max-width: 768px) {
-      .fifth_text {
-        font-size: 8px;
-        line-height: 8px;
+    @include media-breakpoint-down(lg) {
+      .fifth_header{
+        font-size: 2.875rem;
+      }
+      .fifth_text{
+        font-size: 1rem;
       }
     }
-    @media (min-width: 768px) and (max-width: 1200px) {
-      .fifth_text {
-        line-height: 16px;
+    @include media-breakpoint-down(xs) {
+      .fifth_header{
+        font-size: 1.9rem;
+        line-height: 30px;
+      }
+      .fifth_text{
+        font-size: 0.7rem;
       }
     }
   }
