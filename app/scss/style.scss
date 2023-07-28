@@ -993,6 +993,29 @@ html body {
         font-size: 0.7rem;
       }
     }
+
+
+    .slider {
+      display: flex;
+      overflow: hidden;
+    }
+
+    .slide {
+      flex: 0 0 100%;
+      display: none;
+    }
+
+    .slide img {
+      max-width: 100%;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+    }
+
+    .slide:first-child {
+      display: block;
+    }
   }
 
   .sixth_section {
