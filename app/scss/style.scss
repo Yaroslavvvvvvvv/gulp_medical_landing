@@ -1016,6 +1016,46 @@ html body {
     .slide:first-child {
       display: block;
     }
+
+    span {
+      color: #313131;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 30px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4C40F7;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+    }
+    button{
+      width: 50px;
+      height: 50px;
+      color: $text;
+      border-color: $text;
+      background: $background;
+    }
+    button:hover{
+      color: $background;
+      background: $blue;
+    }
+
+    @include media-breakpoint-down(md) {
+      span {
+        font-size: 2rem;
+      }
+      a {
+        font-size: 1.5rem;
+      }
+    }
   }
 
   .sixth_section {
@@ -1298,7 +1338,7 @@ html body {
         padding-top: 25px;
         padding-bottom: 25px;
       }
-      .right_footer{
+      .right_footer {
         padding-left: 14px;
       }
       .my_footer_link {
