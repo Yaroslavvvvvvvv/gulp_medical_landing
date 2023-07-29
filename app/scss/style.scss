@@ -1174,7 +1174,7 @@ html body {
 
 
   footer {
-    background: black;
+    background: #4C40F7;
 
     .my_footer {
       padding-top: 140px;
@@ -1255,7 +1255,7 @@ html body {
       }
 
       .big_link:hover {
-        color: rgba(255, 255, 255, 0.71);
+        color: $black;
         transition: 0.5s;
       }
 
