@@ -87,7 +87,25 @@ html(lang='en')
                             h1.first_header Best Medical &<br>Healthcare Service<br>For Your Family
                             p.first_paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 <br>eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            button.btn.btn-lg.header_button(type='button') Contact us
+                            button.btn.btn-lg.header_button(type='button' data-toggle='modal' data-target='#exampleModal' data-whatever='@mdo') Contact us
+                            #exampleModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                                .modal-dialog(role='document')
+                                    .modal-content
+                                        .modal-header
+                                            h5#exampleModalLabel.modal-title New message
+                                            button.close(type='button' data-dismiss='modal' aria-label='Close')
+                                                span(aria-hidden='true') &times;
+                                        .modal-body
+                                            form
+                                                .form-group
+                                                    label.col-form-label(for='recipient-name') Your Email:
+                                                    input#recipient-name.form-control(type='text')
+                                                .form-group
+                                                    label.col-form-label(for='message-text') Message:
+                                                    textarea#message-text.form-control
+                                        .modal-footer
+                                            button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+                                            button.btn.btn-primary(type='button') Send message
 
             section.second_section
                 .container
@@ -249,7 +267,25 @@ html(lang='en')
                                 div.d-flex.flex-column
                                     p Really know the true needs and expectations of patients
                             div.third_right
-                                button.btn.btn-lg.third_button(type='button') Contact us
+                                button.btn.btn-lg.third_button(type='button' data-toggle='modal' data-target='#exampleFirst' data-whatever='@mdo') Contact us
+                                #exampleFirst.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                                    .modal-dialog(role='document')
+                                        .modal-content
+                                            .modal-header
+                                                h5#exampleFirstLabel.modal-title New message
+                                                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                                                    span(aria-hidden='true') &times;
+                                            .modal-body
+                                                form
+                                                    .form-group
+                                                        label.col-form-label(for='recipient-name') Your Email:
+                                                        input#your-email.form-control(type='text')
+                                                    .form-group
+                                                        label.col-form-label(for='message-text') Message:
+                                                        textarea#your-text.form-control
+                                            .modal-footer
+                                                button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+                                                button.btn.btn-primary(type='button') Send message
                 .container.next#instruction
                     .row.next_row
                         .col-lg-6.col-md-6.col-sm-12.pt-5
@@ -304,7 +340,25 @@ html(lang='en')
                                 h2.fourth_header Make An<br>Appointment And<br>Get Treatment
                                 p.fourth_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus elit non gravida ornare. Fusce pulvinar dui eget massa euismod ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 div.my_fourth_button
-                                    button.btn.btn-lg.fourth_button(type='button') Contact us
+                                    button.btn.btn-lg.fourth_button(type='button' data-toggle='modal' data-target='#exampleSecond' data-whatever='@mdo') Contact us
+                                    #exampleSecond.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                                        .modal-dialog(role='document')
+                                            .modal-content
+                                                .modal-header
+                                                    h5#exampleSecondLabel.modal-title New message
+                                                    button.close(type='button' data-dismiss='modal' aria-label='Close')
+                                                        span(aria-hidden='true') &times;
+                                                .modal-body
+                                                    form
+                                                        .form-group
+                                                            label.col-form-label(for='recipient-name') Your Email:
+                                                            input#recipient-last.form-control(type='text')
+                                                        .form-group
+                                                            label.col-form-label(for='message-text') Message:
+                                                            textarea#message-last.form-control
+                                                .modal-footer
+                                                    button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+                                                    button.btn.btn-primary(type='button') Send message
             section.fifth_section.pb-4#team
                 .container
                     h4.fifth_header Our Professional Team
