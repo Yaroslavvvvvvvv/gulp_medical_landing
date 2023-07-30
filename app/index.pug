@@ -136,7 +136,19 @@ html(lang='en')
                                             h6.text-center.pt-4 Waiting List
                                             p.text-center Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.
                                             .modal_link.pb-5.text-center
-                                                a.more_learn(href='#') Learn More →
+                                                a.more_learn(href='#' data-toggle='modal' data-target="#exampleModalFirst") Learn More →
+                                                #exampleModalFirst.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalScrollableTitle' aria-hidden='true')
+                                                    .modal-dialog.modal-dialog-scrollable(role='document')
+                                                        .modal-content
+                                                            .modal-header
+                                                                h5#exampleModalFirstTitle.modal-title Modal title
+                                                                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                                                                    span(aria-hidden='true') &times;
+                                                            .modal-body
+                                                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cupiditate dignissimos excepturi itaque libero quis quod? Corporis deleniti dolore ducimus esse fugit itaque iusto mollitia nesciunt, saepe temporibus vitae voluptatibus!
+                                                            .modal-footer
+                                                                button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+                                                                button.btn.btn-primary(type='button') Save changes
                                                 hr.colored_line.registration-element
                                     .col-lg-6.col-md-6.col-sm-12.modal_right
                                         .bg-white.modal_block.pt-5.mb-4
@@ -146,7 +158,20 @@ html(lang='en')
                                             h6.text-center.pt-4 Consultation
                                             p.text-center Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.
                                             .modal_link.pb-5.text-center
-                                                a.third-learn(href='#') Learn More →
+                                                a.third-learn(href='#' data-toggle='modal' data-target='#exampleModalSecond') Learn More →
+                                                #exampleModalSecond.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalScrollableTitle' aria-hidden='true')
+                                                    .modal-dialog.modal-dialog-scrollable(role='document')
+                                                        .modal-content
+                                                            .modal-header
+                                                                h5#exampleModalSecondTitle.modal-title Modal title
+                                                                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                                                                    span(aria-hidden='true') &times;
+                                                            .modal-body
+                                                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis, facere nihil quibusdam recusandae rem reprehenderit sed! Dolorum fuga harum impedit libero maiores natus odio qui sequi soluta voluptates! Provident.
+                                                            .modal-footer
+                                                                button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+                                                                button.btn.btn-primary(type='button') Save changes
+
                                                 hr.colored_line.consultation-element
                                         .bg-white.modal_block.pt-5.mb-4
                                             .modal_logo.treatment-element
@@ -155,7 +180,19 @@ html(lang='en')
                                             h6.text-center.pt-4 Treatment
                                             p.text-center Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.
                                             .modal_link.pb-5.text-center
-                                                a.last-learn(href='#') Learn More →
+                                                a.last-learn(href='#' data-toggle='modal' data-target='#exampleModalLast') Learn More →
+                                                #exampleModalLast.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalScrollableTitle' aria-hidden='true')
+                                                    .modal-dialog.modal-dialog-scrollable(role='document')
+                                                        .modal-content
+                                                            .modal-header
+                                                                h5#exampleModalLastTitle.modal-title Modal title
+                                                                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                                                                    span(aria-hidden='true') &times;
+                                                            .modal-body
+                                                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis corporis cumque dolore eos mollitia nesciunt pariatur sed soluta, ullam vel. Deserunt dolorum illum obcaecati, qui quidem repellat reprehenderit rerum voluptas.
+                                                            .modal-footer
+                                                                button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+                                                                button.btn.btn-primary(type='button') Save changes
                                                 hr.colored_line.treatment-element
             section.third_section
                 .container
