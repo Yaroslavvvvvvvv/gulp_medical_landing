@@ -110,7 +110,19 @@ html(lang='en')
                                             h6.text-center.pt-4 Registration
                                             p.text-center Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.
                                             .modal_link.pb-5.text-center
-                                                a.learn_more(href='#') Learn More →
+                                                a.learn_more(href='#' data-toggle='modal' data-target='#exampleModalScrollable') Learn More →
+                                                #exampleModalScrollable.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalScrollableTitle' aria-hidden='true')
+                                                    .modal-dialog.modal-dialog-scrollable(role='document')
+                                                        .modal-content
+                                                            .modal-header
+                                                                h5#exampleModalScrollableTitle.modal-title Modal title
+                                                                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                                                                    span(aria-hidden='true') &times;
+                                                            .modal-body
+                                                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, ea eos expedita explicabo natus reprehenderit. Aliquam asperiores assumenda at dolor dolorem ducimus laudantium molestias nobis, reprehenderit saepe voluptas, voluptate voluptatum!
+                                                            .modal-footer
+                                                                button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+                                                                button.btn.btn-primary(type='button') Save changes
                                                 hr.colored_line.highlighted-element
                                         .bg-white.modal_block.pt-5.mb-4
                                             .modal_logo.registration-element
