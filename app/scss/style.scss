@@ -478,6 +478,22 @@ html body {
         }
       }
 
+      .highlighted-element.highlight {
+        background-color: $blue;
+      }
+
+      .registration-element.registration {
+        background-color: $blue;
+      }
+
+      .consultation-element.consultation {
+        background-color: $blue;
+      }
+
+      .treatment-element.treatment {
+        background-color: $blue;
+      }
+
       h6 {
         color: $text;
         font-family: 'Inter', sans-serif;
@@ -956,6 +972,7 @@ html body {
 
   .fifth_section {
     background: $background;
+    padding-top: 80px;
 
     .fifth_header {
       padding-top: 78px;
@@ -1036,14 +1053,16 @@ html body {
       font-weight: 400;
       line-height: 16px;
     }
-    button{
+
+    button {
       width: 50px;
       height: 50px;
       color: $text;
       border-color: $text;
       background: $background;
     }
-    button:hover{
+
+    button:hover {
       color: $background;
       background: $blue;
     }
@@ -1055,6 +1074,22 @@ html body {
       a {
         font-size: 1.5rem;
       }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .fifth_section {
+      padding-top: 80px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .fifth_section {
+      padding-top: 120px;
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    .fifth_section {
+      padding-top: 110px;
     }
   }
 
@@ -1177,8 +1212,8 @@ html body {
     background: #4C40F7;
 
     .my_footer {
-      padding-top: 140px;
-      padding-bottom: 140px;
+      padding-top: 25px;
+      padding-bottom: 25px;
 
       .footer_logo {
         color: $background;

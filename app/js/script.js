@@ -1,3 +1,4 @@
+//Навігація по сайту
 $(document).ready(function () {
 
     const hash = window.location.hash
@@ -43,7 +44,7 @@ $(document).ready(function () {
 
 })
 
-
+// Слайдер в fifth_section
 $(document).ready(function () {
     const $slides = $(".slide");
     let currentIndex = 0;
@@ -65,6 +66,62 @@ $(document).ready(function () {
     $(".prev").on("click", prevSlide);
     $(".next").on("click", nextSlide);
 });
+
+
+//Make appointment
+document.getElementById('goToTeam').addEventListener('click', function () {
+    let teamElement = document.getElementById('team');
+    teamElement.scrollIntoView({behavior: 'smooth'});
+});
+
+// блоки з другої секції
+$(document).ready(function () {
+    $(".learn_more").hover(
+        function () {
+            $(".highlighted-element").addClass("highlight");
+        },
+        function () {
+            $(".highlighted-element").removeClass("highlight");
+        },
+    );
+});
+
+
+$(document).ready(function () {
+    $(".more_learn").hover(
+        function () {
+            $(".registration-element").addClass("registration");
+        },
+        function () {
+            $(".registration-element").removeClass("registration");
+        },
+    );
+});
+
+$(document).ready(function () {
+    $(".third-learn").hover(
+        function () {
+            $(".consultation-element").addClass("consultation");
+        },
+        function () {
+            $(".consultation-element").removeClass("consultation");
+        },
+    );
+});
+$(document).ready(function () {
+    $(".last-learn").hover(
+        function () {
+            $(".treatment-element").addClass("treatment");
+        },
+        function () {
+            $(".treatment-element").removeClass("treatment");
+        },
+    );
+});
+
+
+
+
 
 
 
